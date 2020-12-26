@@ -172,10 +172,10 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   void _toggleFavorite() {
     setState(() {
       if (_isFavorited) {
-        _favoriteCount -= 3;
+        _favoriteCount -= 5;
         _isFavorited = false;
       } else {
-        _favoriteCount += 3;
+        _favoriteCount += 5;
         _isFavorited = true;
       }
     });
@@ -185,6 +185,26 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        Container(
+          padding: EdgeInsets.all(0),
+          child: IconButton(
+            padding: EdgeInsets.all(0),
+            alignment: Alignment.centerRight,
+            icon: (_isFavorited ? Icon(Icons.star) : Icon(Icons.star_border)),
+            color: Colors.orange[500],
+            onPressed: _toggleFavorite,
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.all(0),
+          child: IconButton(
+            padding: EdgeInsets.all(0),
+            alignment: Alignment.centerRight,
+            icon: (_isFavorited ? Icon(Icons.star) : Icon(Icons.star_border)),
+            color: Colors.orange[500],
+            onPressed: _toggleFavorite,
+          ),
+        ),
         Container(
           padding: EdgeInsets.all(0),
           child: IconButton(
@@ -226,3 +246,4 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   }
   // ···
 }
+

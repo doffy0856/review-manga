@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:reviewmanga/menupage.dart';
 
-class Kintama extends StatelessWidget {
+class Stone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.lightGreen,
       ),
-      home: MyHomePage(title: 'KINTAMA'),
+      home: MyHomePage(title: 'DR.STONE'),
     );
   }
 }
@@ -45,14 +45,14 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text(
-                  'Kintama',
+                  'Dr.Stone',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               Text(
-                'Sorachi Hideaki',
+                'Riichiro Inagaki',
                 style: TextStyle(
                   color: Colors.grey[500],
                 ),
@@ -69,13 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget textSection = Container(
     padding: const EdgeInsets.all(32),
     child: Text(
-      '   กินทามะ (ญี่ปุ่น: 銀魂 โรมาจิ: Gintama ทับศัพท์: กินตะมะ, "จิตวิญญาณสีเงิน")'
-      'เป็นการ์ตูนญี่ปุ่น เขียนโดย ฮิเดอากิ โซราจิ เริ่มลงตีพิมพ์ในนิตยสารโชเน็งจัมป์รายสัปดาห์'
-      'ของสำนักพิมพ์ชูเอฉะ ตั้งแต่วันที่ 8 ธันวาคม พ.ศ. 2546 ได้รับการจัดพิมพ์รวมเล่ม'
-      'เป็นหนังสือการ์ตูนมาแล้ว 77 เล่ม เป็นเรื่องราวเกี่ยวกับซากาตะ กินโทกิ อดีตซามูไร'
-      'ที่ทำอาชีพรับจ้างอิสระพร้อมด้วยชิมูระ ชินปาจิและคางุระ เพื่อหาเงินมาเลี้ยงชีพ  '
-      'ในยุคที่ซามูไรตกต่ำเนื่องจากการรุกรานของมนุษย์ต่างดาว  เนื้อเรื่องเป็นการผสมผสาน'
-      'ระหว่างแนวย้อนยุค และแนววิทยาศาสตร์ ลักษณะแนวเรื่องเป็นแนวตลกและต่อสู้',
+      '   นักเรียนมัธยมโอกิ ไทจุบอกกับอิชิงามิ เซ็นคูเพื่อนผู้รักวิทยาศาสตร์ว่าตนจะไปสารภาพรักกับโองาวะ'
+      'ยุสึริฮะเพื่อนร่วมชั้น ไทจุเตรียมการจะสารภาพรักกับยุสึริฮะที่ใต้ต้นการบูรในสนามโรงเรียน '
+      'แต่ความพยายามของไทจุก็ถูกขัดจังหวะด้วยแสงประหลาดบนท้องฟ้า ไทจุผลักยุสึริฮะไปยังต้นไม้เพื่อปกป้องเธอ'
+      'ในขณะที่แสงได้ทำให้พวกเขากลายเป็นหินไปพร้อมกับประชากรมนุษย์ทั้งหมด 3,700 ปีต่อมาหลังการกลายเป็นหิน '
+      'เซ็นคูและไทจุได้กลับคืนสภาพเดิมจากการกลายเป็นหินมาอยู่ในโลกในยุคที่พวกเขาเรียกว่าโลกยุคหิน'
+      'เซ็นคูค้นพบว่าการกลายเป็นหินสามารถรักษาได้ด้วยไนตอล และตั้งใจจะฟื้นฟูอารยธรรมขึ้นใหม่'
+      'พร้อมด้วยความช่วยเหลือจากไทจุ พวกเขาตั้งใจจะคืนสภาพให้ยุสึริฮะเป็นคนแรก แต่เมื่อพวกเขาถูกโจมตีโดยฝูงสิงโต'
+      'จึงจำเป็นต้องคืนสภาพให้กับชิชิโอะ สึคาสะที่เป็นนักศิลปะการต่อสู้ ก่อนจะคืนสภาพให้ยุสึริฮะได้สำเร็จในภายหลัง',
       softWrap: true,
     ),
   );
@@ -89,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Expanded(
           child: Padding(
             padding:
-                const EdgeInsets.only(left: 110.0, right: 110.0, top: 50.0),
+                const EdgeInsets.only(left: 110.0, right: 110.0, top: 10.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.push(context,
@@ -117,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: <Widget>[
           Image.asset(
-            'images/kintama.jpeg',
+            'images/stone.jpg',
             width: 600,
             height: 240,
             fit: BoxFit.cover,

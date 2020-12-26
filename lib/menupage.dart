@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reviewmanga/demon.dart';
+import 'package:reviewmanga/dr-stone.dart';
 import 'package:reviewmanga/kintama.dart';
 import 'package:reviewmanga/main.dart';
 import 'package:reviewmanga/onepiece.dart';
@@ -125,14 +126,44 @@ class MenuPage extends StatelessWidget {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(
+                        left: 50.0, right: 50.0, top: 50.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Stone(),
+                          ),
+                        );
+                      },
+                      child: new Container(
+                          alignment: Alignment.center,
+                          height: 60.0,
+                          decoration: new BoxDecoration(
+                              color: Color(0xFF18D191),
+                              borderRadius: new BorderRadius.circular(9.0)),
+                          child: new Text("DR.STONE",
+                              style: new TextStyle(
+                                  fontSize: 20.0, color: Colors.white))),
+                    ),
+                  ),
+                )
+              ],
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
                         left: 110.0, right: 110.0, top: 50.0),
                     child: GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => MyApp(),
-                              ),
+                            builder: (context) => MyApp(),
+                          ),
                         );
                       },
                       child: new Container(
